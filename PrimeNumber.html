@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  // let numb = parseInt(prompt("Nhập số lượng số nguyên tố cần có: "));
+  // function checkSNT() {
+  //   let count = 0;
+  //   let Nghiem = 0;
+  //   for (let i = 2; i < 100; i++) {
+  //     if (count < numb) {
+  //       for (let j = 1; j<=i; j++) {
+  //         if ( i % j === 0) {
+  //           Nghiem += 1;
+  //         }
+  //         }
+  //         if (Nghiem === 2) {
+  //             document.write(i + "<br>");
+  //             count ++;
+  //         }else {
+  //             Nghiem = 0;
+  //       }
+  //     } else {
+  //       break;
+  //     }
+  //   }
+  // }
+  //
+  // checkSNT(numb);
+
+  let count = 1;
+  let number = 2;
+  while (count < 21) {
+      let check = true;
+      for (let i = 2; i < number; i++) {
+          if (number % i === 0) {
+              check = false;
+              break;
+          }
+      }
+      if (check) {
+          count ++;
+          document.write(number + "<br>");
+
+      }
+          number ++;
+  }
+</script>
